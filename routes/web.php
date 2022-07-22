@@ -22,4 +22,8 @@ Route::get('first/{id}', function ($id) {
     return view('first');
 });
 Route::get('user_home',[User::class, 'index']);
+Route::get('index',[User::class, 'index']);
 Route::get('user_home/{id}',[User::class, 'index']);
+
+Route::get('about',[User::class, 'about']);
+Route::get('services',[User::class, 'services']);
